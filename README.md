@@ -74,6 +74,14 @@ Sincronización y Dead-Locks.
 
 3. Ejecute la aplicación y verifique cómo funcionan las opción ‘pause and check’. Se cumple el invariante?.
 
+  - La funcion de "Pause and Check" funciona de tal forma en que cuando se da en el boton de "Pause and Check" nos muestra el numero jugadores establecidos, clasificados desde       cero para arriba, con su vida respectiva de cada uno. Además nos muestra la sumatoria total de vidas.
+  
+  	![]()
+  
+  -La invariente no se cumple ya que la suma total de la vida de los jugadores, no es N*100.
+  
+  	![]()
+
 4. Una primera hipótesis para que se presente la condición de carrera para dicha función (pause and check), es que el programa consulta la lista cuyos valores va a imprimir, a la vez que otros hilos modifican sus valores. Para corregir esto, haga lo que sea necesario para que efectivamente, antes de imprimir los resultados actuales, se pausen todos los demás hilos. Adicionalmente, implemente la opción ‘resume’.
 
 5. Verifique nuevamente el funcionamiento (haga clic muchas veces en el botón). Se cumple o no el invariante?.
