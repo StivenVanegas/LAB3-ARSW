@@ -78,7 +78,7 @@ Sincronización y Dead-Locks.
   
   	![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/PARTE%203%20%2C%20Item%203.png)
   
-  -La invariente no se cumple ya que la suma total de la vida de los jugadores, no es N*100.
+  -La invariente no se cumple ya que la suma total de la vida de los jugadores, No es N*100.
   
   	![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%203%2C%20%20segunda%20imagen.png)
 
