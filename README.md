@@ -78,9 +78,9 @@ Sincronización y Dead-Locks.
   
   	![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/PARTE%203%20%2C%20Item%203.png)
   
-  -La invariente no se cumple ya que la suma total de la vida de los jugadores, No es N*100.
+  	- La invariente no se cumple ya que la suma total de la vida de los jugadores, No es N*100.
   
-  	![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/PARTE%203%20%2C%20Item%203.png)
+  	![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%203%2C%20%20segunda%20imagen.png)
 	
 4. Una primera hipótesis para que se presente la condición de carrera para dicha función (pause and check), es que el programa consulta la lista cuyos valores va a imprimir, a la vez que otros hilos modifican sus valores. Para corregir esto, haga lo que sea necesario para que efectivamente, antes de imprimir los resultados actuales, se pausen todos los demás hilos. Adicionalmente, implemente la opción ‘resume’.
 
