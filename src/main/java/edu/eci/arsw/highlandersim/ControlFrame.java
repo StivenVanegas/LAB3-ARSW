@@ -23,8 +23,8 @@ import java.awt.Color;
 import javax.swing.JScrollBar;
 
 public class ControlFrame extends JFrame {
-
     private static final int DEFAULT_IMMORTAL_HEALTH = 100;
+
     private static final int DEFAULT_DAMAGE_VALUE = 10;
 
     private JPanel contentPane;
@@ -91,6 +91,10 @@ public class ControlFrame extends JFrame {
                 /*
 				 * COMPLETAR
                  */
+				for (Immortal im : immortals) {
+                    im.setPause();
+                }
+				 
                 int sum = 0;
                 for (Immortal im : immortals) {
                     sum += im.getHealth();
@@ -111,8 +115,10 @@ public class ControlFrame extends JFrame {
                 /**
                  * IMPLEMENTAR
                  */
-
+				for (Immortal im : immortals) {
+                    im.setContinue();
             }
+                }
         });
 
         toolBar.add(btnResume);
