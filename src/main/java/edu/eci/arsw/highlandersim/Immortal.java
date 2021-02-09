@@ -3,6 +3,7 @@ package edu.eci.arsw.highlandersim;
 import java.util.List;
 import java.util.Random;
 
+
 public class Immortal extends Thread {
 
     private ImmortalUpdateReportCallback updateCallback=null;

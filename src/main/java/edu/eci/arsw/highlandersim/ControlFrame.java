@@ -21,6 +21,9 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JScrollBar;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.DateFormat;
 
 public class ControlFrame extends JFrame {
     private static final int DEFAULT_IMMORTAL_HEALTH = 100;
@@ -94,6 +97,10 @@ public class ControlFrame extends JFrame {
 				for (Immortal im : immortals) {
                     im.setPause();
                 }
+				ImmortalUpdateReportCallback ucb=new TextAreaUpdateReportCallback(output,scrollPane);
+				DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+				Date date = new Date();
+                ucb.processReport("Pause "+ dateFormat.format(date));
 				 
                 int sum = 0;
                 for (Immortal im : immortals) {
@@ -117,8 +124,12 @@ public class ControlFrame extends JFrame {
                  */
 				for (Immortal im : immortals) {
                     im.setContinue();
-            }
-                }
+				}
+				ImmortalUpdateReportCallback ucb=new TextAreaUpdateReportCallback(output,scrollPane);
+				DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+				Date date = new Date();
+                ucb.processReport("Resume "+ dateFormat.format(date));
+			}
         });
 
         toolBar.add(btnResume);
