@@ -1,0 +1,10 @@
+Respuesta Argumentada ITEM 10
+
+Evidenciando el código y mirando su comportamiento pudimos evidenciar que el programa no genera una condición de carrera, 
+ya que en este se agrega una variable que se encarga de verificar cuando un inmortal se queda sin vida y así pasaría al estado de “Muerto” 
+y todos los demás lo verían muerto.
+
+
+Al momento de pelear y restar vida sea el caso en el que se encuentra el caso, se hace una verificación de si mismo si se encuentra “Vivo” 
+para seguir peleando. Además, de si se esta atacando mientras se encuentra vivo. El problema se identifica cuando se genera el caso en el 
+que de igual manera existen peleas entre inmortales “Vivos” y “Muertos”, ya que los muertos no se pueden eliminar de la lista de inmortales. 

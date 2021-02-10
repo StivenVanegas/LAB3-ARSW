@@ -149,7 +149,7 @@ public class ControlFrame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 /**
                  * IMPLEMENTAR
-                 */
+                 * stop hilos, boton stop*/
 				for (Immortal im : immortals) {
                     im.setStop();
 				}
