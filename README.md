@@ -18,7 +18,7 @@ Control de hilos con wait/notify. Productor/consumidor.
 
 1. Revise el funcionamiento del programa y ejecútelo. Mientras esto ocurren, ejecute jVisualVM y revise el consumo de CPU del proceso correspondiente. A qué se debe este consumo?, cual es la clase responsable?
 
-  - El consumo se debe a que que hay un hilo que se esta ejecutando por el productor y otro hilo que ser esta ejecutando por el consumidor
+    - El consumo se debe a que que hay un hilo que se esta ejecutando por el productor y otro hilo que ser esta ejecutando por el consumidor
 
 ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/PUNTO%201%2C%20lab%203%2C%20item%201.png)
 
@@ -28,17 +28,17 @@ Control de hilos con wait/notify. Productor/consumidor.
 
 3. Haga que ahora el productor produzca muy rápido, y el consumidor consuma lento. Teniendo en cuenta que el productor conoce un límite de Stock (cuantos elementos debería tener, a lo sumo en la cola), haga que dicho límite se respete. Revise el API de la colección usada como cola para ver cómo garantizar que dicho límite no se supere. Verifique que, al poner un límite pequeño para el 'stock', no haya consumo alto de CPU ni errores.
 
-  - Productor produce mas rapido y el consumidor mas lento.
+    - Productor produce mas rapido y el consumidor mas lento.
   
-  ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/item%203%20lab%203%20arsw%2C%20parte%201.png)
+     ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/item%203%20lab%203%20arsw%2C%20parte%201.png)
   
-  - Apartir de revisar la clase de productor, se pudo establecer que el limite de stock es aproximadamente 922337203685......
+    - Apartir de revisar la clase de productor, se pudo establecer que el limite de stock es aproximadamente 922337203685......
   
-  ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/consumo%2C%20item%203.png)
+      ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/consumo%2C%20item%203.png)
   
-  - Se verifico para garantizar que dicho limite no se superara en el API. Se establecio en el limite del pequeño stock un valor de 10.000, garantizando que la CPU, no tuviera       altos consumos de recursos
+    - Se verifico para garantizar que dicho limite no se superara en el API. Se establecio en el limite del pequeño stock un valor de 10.000, garantizando que la CPU, no tuviera       altos consumos de recursos
   
-  ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/item%203%2C%20lab%203%2C%20parte%202%2C%20cambio%20valor.png)
+     ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/item%203%2C%20lab%203%2C%20parte%202%2C%20cambio%20valor.png)
 
 
 #### Parte II. – Antes de terminar la clase.
