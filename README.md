@@ -124,29 +124,29 @@ Sincronización y Dead-Locks.
 	
 7. Tras implementar su estrategia, ponga a correr su programa, y ponga atención a si éste se llega a detener. Si es así, use los programas jps y jstack para identificar por qué el programa se detuvo.
 
-  - El programa no se detuvo, duro corriendo 7 minutos y no se detuvo. Por tanto no fue necesario el uso de los programas de JPS y JsTack.
+    - El programa no se detuvo, duro corriendo 7 minutos y no se detuvo. Por tanto no fue necesario el uso de los programas de JPS y JsTack.
   
-    ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/parte%203%2C%20item%207.png)
+       ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/parte%203%2C%20item%207.png)
 
 8. Plantee una estrategia para corregir el problema antes identificado (puede revisar de nuevo las páginas 206 y 207 de _Java Concurrency in Practice_).
 
-  - No aplica la estrategia, ya que no se presenta el problema del punto anterior y por tanto no fue necesario corregir el problema identificado.
+    - No aplica la estrategia, ya que no se presenta el problema del punto anterior y por tanto no fue necesario corregir el problema identificado.
 
 9. Una vez corregido el problema, rectifique que el programa siga funcionando de manera consistente cuando se ejecutan 100, 1000 o 10000 inmortales. Si en estos casos grandes se empieza a incumplir de nuevo el invariante, debe analizar lo realizado en el paso 4.
 
-  - Pudimos evidenciar que todos los casos el especificados en este punto, siempre corrió el programa y no se detuvo, cada caso se dejo corriendo dos minutos, con el fin de         poder verificar que si cumplía la condición en los tres casos. 
+     - Pudimos evidenciar que todos los casos el especificados en este punto, siempre corrió el programa y no se detuvo, cada caso se dejo corriendo dos minutos, con el fin de         poder verificar que si cumplía la condición en los tres casos. 
   
-  - Programa corrido con el valor de 100
+     - Programa corrido con el valor de 100
   
-    ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%209%20prueba%20100.png)
+        ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%209%20prueba%20100.png)
    
-   - Programa corrido con el valor de 1000
+      - Programa corrido con el valor de 1000
    
-    ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20Item%209%20prueba%201000.png)
+         ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20Item%209%20prueba%201000.png)
     
-    - Programa corrido con el valor de 10.000
+      - Programa corrido con el valor de 10.000
     
-      ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20Item%209%20prueba%201000.png)
+         ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20Item%209%20prueba%201000.png)
     
 
 10. Un elemento molesto para la simulación es que en cierto punto de la misma hay pocos 'inmortales' vivos realizando peleas fallidas con 'inmortales' ya muertos. Es necesario ir suprimiendo los inmortales muertos de la simulación a medida que van muriendo. Para esto:
@@ -159,9 +159,9 @@ Sincronización y Dead-Locks.
 
 11. Para finalizar, implemente la opción STOP.
 
-  - Para finalizar podemos ver el método de implementación de Stop, en donde se creó la función del botón de stop en el mismo juego, para que así detuviera el programa.
+     - Para finalizar podemos ver el método de implementación de Stop, en donde se creó la función del botón de stop en el mismo juego, para que así detuviera el programa.
   
-     ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%2011.png)
+         ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20item%2011.png)
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este contenido hace parte del curso Arquitecturas de Software del programa de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería, y está licenciado como <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
