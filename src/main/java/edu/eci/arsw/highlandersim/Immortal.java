@@ -19,6 +19,7 @@ public class Immortal extends Thread {
     private final Random r = new Random(System.currentTimeMillis());
 	
 	private boolean pause = false;
+	private boolean stop = false;
 
 
     public Immortal(String name, List<Immortal> immortalsPopulation, int health, int defaultDamageValue, ImmortalUpdateReportCallback ucb) {
@@ -68,6 +69,7 @@ public class Immortal extends Thread {
 						e.printStackTrace();
 					}
 				}
+				if (stop) break;
 			}
 
         }
@@ -103,7 +105,13 @@ public class Immortal extends Thread {
 		this.pause = false;
 		notify();
 	}
-
+	
+	public synchronized void setStop(){
+		this.stop = true;
+		this.pause = false;
+		notify();
+	}
+	
 
 
     @Override

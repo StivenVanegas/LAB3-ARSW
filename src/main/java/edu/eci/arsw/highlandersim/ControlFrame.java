@@ -145,6 +145,20 @@ public class ControlFrame extends JFrame {
 
         JButton btnStop = new JButton("STOP");
         btnStop.setForeground(Color.RED);
+		btnStop.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                /**
+                 * IMPLEMENTAR
+                 */
+				for (Immortal im : immortals) {
+                    im.setStop();
+				}
+				ImmortalUpdateReportCallback ucb=new TextAreaUpdateReportCallback(output,scrollPane);
+				DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+				Date date = new Date();
+                ucb.processReport("STOP "+ dateFormat.format(date));
+			}
+        });
         toolBar.add(btnStop);
 
         scrollPane = new JScrollPane();
