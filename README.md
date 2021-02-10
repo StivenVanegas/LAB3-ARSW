@@ -97,11 +97,11 @@ Sincronización y Dead-Locks.
 
     - No se cumple la invariante, debido a que el valor de la suma de la vida total, cambia por cada vez que se inicia, y no mantiene constante como lo indica las instrucciones      del juego.
     
-       ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/parte%203%2C%20item%204%2C%20parte%202.png)
+       ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/Parte%203%2C%20Item%205%20.png)
        
     - Como podemos ver en las dos imagenes adjuntas, el valor de la suma de la vida total cambia en la corrida del programa. Se puede evidenviar en la fecha y hora de pausa del       juego.
     
-       ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/parte%203%2C%20item%204%2C%20parte%202.png)
+       ![](https://github.com/StivenVanegas/LAB3-ARSW/blob/master/Images/parte%203%2C%20item%205%20segunda%20parte.png)
 
 6. Identifique posibles regiones críticas en lo que respecta a la pelea de los inmortales. Implemente una estrategia de bloqueo que evite las condiciones de carrera. Recuerde que si usted requiere usar dos o más ‘locks’ simultáneamente, puede usar bloques sincronizados anidados:
 
