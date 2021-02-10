@@ -48,8 +48,10 @@ public class Immortal extends Thread {
             im = immortalsPopulation.get(nextFighterIndex);
 
             synchronized (immortalsPopulation){
-                this.fight(im);
 
+                if(im.getHealth() > 0 && this.getHealth() > 0){
+                    this.fight(im);
+                }
             }
 
             try {
@@ -84,8 +86,9 @@ public class Immortal extends Thread {
 
     }
 
-    public void changeHealth(int v) {
+    public  void changeHealth(int v) {
         health = v;
+
     }
 
     public int getHealth() {
@@ -100,6 +103,8 @@ public class Immortal extends Thread {
 		this.pause = false;
 		notify();
 	}
+
+
 
     @Override
     public String toString() {

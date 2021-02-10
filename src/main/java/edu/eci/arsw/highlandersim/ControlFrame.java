@@ -25,6 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.text.DateFormat;
 
+
 public class ControlFrame extends JFrame {
     private static final int DEFAULT_IMMORTAL_HEALTH = 100;
 
